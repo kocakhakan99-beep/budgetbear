@@ -1,0 +1,45 @@
+# Plan: Copilot / Feature Coordination (Offline-first)
+
+Goal
+- Build BudgetBear as an offline-only personal budgeting tool. Persistence is local (IndexedDB). Export to XLSX/JSON is the canonical "save". Optional client-side backup encryption is supported.
+
+Milestones
+1. Offline core (1–2 weeks)
+   - Implement IndexedDB (Dexie) persistence with migrations.
+   - Transactions, categories, basic CRUD UI.
+   - Export to XLSX (SheetJS) and JSON backup; Import with validation.
+   - PWA manifest & Service Worker for app shell.
+   - Add README, DEVELOPMENT, ARCHITECTURE, SECURITY, ROADMAP docs (this commit).
+
+2. Reliability & convenience (2–4 weeks)
+   - Client-side encryption of exported backups (Web Crypto AES-GCM).
+   - File System Access API optional support for persistent backup files on supported browsers.
+   - Recurrence rules & projection engine.
+   - Charts & reports.
+
+3. Polish & release (2–4 weeks)
+   - Tests (unit + Playwright E2E).
+   - Accessibility improvements (WCAG).
+   - Release v0.1 with CHANGELOG.
+
+Success criteria
+- All data stored locally and exportable in human-readable Excel files.
+- Clear import/restore workflows and documentation so users can always recover data.
+- PWA installability and offline app shell.
+
+Short-term tasks (create issues)
+- Implement Dexie DB + migrations
+- Implement export XLSX via SheetJS
+- Implement JSON backup/export and import with validation
+- Implement client-side optional encryption CLI/UI
+- Implement recurrence generator (rrule or custom)
+- Add PWA manifest and Service Worker
+
+Risks and mitigations
+- Data loss via browser settings: mitigate with aggressive UI backup reminders and clear docs.
+- Browser API differences: graceful fallbacks and cross-browser testing.
+
+How to proceed
+- Add these docs to the repo.
+- Open issues for each short-term task and start with persistence + export/import.
+- I can scaffold the DB + export code next if you want.
