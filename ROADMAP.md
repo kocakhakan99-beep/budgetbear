@@ -4,7 +4,7 @@ Priority: get a stable offline experience and robust export/import before adding
 
 ## v0.1 — Offline core (1–2 weeks)
 - UI for basic transactions, categories, budgets.
-- Reliable browser-local persistence with migrations.
+- Reliable browser-local persistence.
 - Export to XLSX and JSON.
 - Import JSON and XLSX with validation.
 - PWA shell (manifest + Service Worker).

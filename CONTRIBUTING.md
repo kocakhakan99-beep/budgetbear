@@ -9,10 +9,10 @@ Getting started
 Development workflow
 - Open a PR to the main branch (or the repository's canonical development branch).
 - Use small, focused commits and provide a clear PR description with motivation, changes, and screenshots if UI changes.
-- Add tests for new behavior (see DEVELOPMENT.md for testing commands).
+- Manually verify new behavior in a browser (see DEVELOPMENT.md).
 
 Code quality
-- Run linters and formatters before opening PRs.
+- Run the manual validation steps in DEVELOPMENT.md before opening PRs.
 - Keep feature branches rebased on the target branch to minimize merge conflicts.
 
 Issue reporting
