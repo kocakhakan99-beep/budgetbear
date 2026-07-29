@@ -51,4 +51,4 @@ Sijoitusten efektiivinen kuukausituotto lasketaan vuosituotosta:
 
 ## Käyttöönotto
 
-Avaa `kodin_talousstudio_v1_1.html` modernissa selaimessa. Chart.js-, Excel- ja PDF-kirjastot ladataan CDN-palvelusta, joten kuvaajat ja vientitoiminnot tarvitsevat verkkoyhteyden. Taloustiedot tallennetaan selaimen paikalliseen tallennustilaan.
+Avaa `index.html` modernissa selaimessa. Vanha `kodin_talousstudio_v1_1.html` ohjaa yhteensopivuussyistä samaan sovellukseen. Chart.js-, Excel- ja PDF-kirjastot ladataan CDN-palvelusta, joten kuvaajat ja vientitoiminnot tarvitsevat verkkoyhteyden. Taloustiedot tallennetaan selaimen paikalliseen tallennustilaan.
