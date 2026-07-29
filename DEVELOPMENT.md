@@ -15,7 +15,8 @@ python3 -m http.server 8000
 
 Then open <http://localhost:8000>. The application currently loads Chart.js,
 SheetJS, and jsPDF from CDNs, so network access is required for the initial load
-and those integrations.
+and those integrations. The local app shell is cached by `sw.js` after the first
+load; service workers do not run when opening the file directly.
 
 ## Project structure
 
@@ -33,6 +34,9 @@ reporting formats; JSON is the lossless restore format.
 
 Never commit exported user data or credentials. Test imports with disposable
 data and verify that reset operations are intentional.
+
+MASTER Excel imports are validated before replacing in-memory state. A failed
+import leaves the current data unchanged.
 
 ## Validation
 

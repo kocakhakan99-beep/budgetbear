@@ -5,6 +5,7 @@ BudgetBear is a client-side personal budgeting web app intended for personal use
 Quick highlights
 - No online data storage or user account.
 - Persistent local storage in the browser.
+- Installable offline shell with a service worker.
 - Export to Excel, PDF, and JSON backups.
 - Responsive budgeting, debt, investment, and asset planning.
 
@@ -13,6 +14,7 @@ Getting started (local)
    `git clone https://github.com/kocakhakan99-beep/budgetbear.git`
 2. Open `index.html` in a modern browser, or serve the repository with any static HTTP server.
 3. For charts and exports, allow the CDN-hosted libraries used by `index.html`.
+   The app shell and saved data remain available offline after the first load.
 
 Application entrypoints
 - `index.html` is the primary entrypoint for the refactored app shell.
