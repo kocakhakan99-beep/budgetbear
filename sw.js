@@ -1,10 +1,11 @@
-const CACHE = 'budgetbear-shell-v1';
+const CACHE = 'budgetbear-shell-v2';
 const SHELL = [
   './',
   './index.html',
   './src/css/app.css',
   './src/js/app.js',
-  './manifest.webmanifest'
+  './manifest.webmanifest',
+  './icon.svg'
 ];
 
 self.addEventListener('install', event => {
