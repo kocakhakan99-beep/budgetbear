@@ -1,4 +1,4 @@
-const CACHE = 'budgetbear-shell-v2';
+const CACHE = 'budgetbear-shell-v3';
 const SHELL = [
   './',
   './index.html',
