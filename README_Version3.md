@@ -19,6 +19,15 @@ Getting started (local)
    npm run dev
 5. Open http://localhost:3000
 
+Application entrypoints
+- `index.html` is the primary entrypoint for the refactored app shell.
+- `kodin_talousstudio_v1_1.html` redirects to `index.html` to preserve older links and local bookmarks.
+
+Repository structure
+- `index.html` — app shell markup
+- `src/css/app.css` — shared application styles
+- `src/js/app.js` — shared application logic
+
 Important notes about data safety
 - Browser data can be cleared by the user or by the browser (cache, site data, profile deletion). Always export backups regularly.
 - Use the Export feature to create XLSX or encrypted JSON backups you control.
