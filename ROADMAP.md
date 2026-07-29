@@ -3,11 +3,11 @@
 Priority: get a stable offline experience and robust export/import before adding advanced features.
 
 ## v0.1 — Offline core (1–2 weeks)
-- UI for basic transactions, categories, budgets.
-- Reliable browser-local persistence.
-- Export to XLSX and JSON.
-- Import JSON and XLSX with validation.
-- PWA shell (manifest + Service Worker).
+- [x] UI for basic transactions, categories, budgets.
+- [x] Reliable browser-local persistence.
+- [x] Export to XLSX and JSON.
+- [x] Import JSON and XLSX with validation.
+- [x] PWA shell (manifest + Service Worker).
 
 ## v0.2 — Reliability & UX (2–4 weeks)
 - Client-side encryption for JSON backups.
@@ -22,8 +22,8 @@ Priority: get a stable offline experience and robust export/import before adding
 - UI/UX polish and responsive layouts.
 
 ## v0.4 — Visual identity & usability
-- Light/dark mode toggle and system-preference detection.
-- Seven pastel themes: blue, pink, olive, beige, purple, black, white.
+- [x] Light/dark mode toggle and system-preference detection.
+- [x] Seven pastel themes: blue, pink, olive, beige, purple, black, white.
 - UX review focused on making navigation, labels and feedback more intuitive; consolidate quick actions, improve empty states and add contextual help where needed.
 
 ## v0.5 — Income & budget flexibility

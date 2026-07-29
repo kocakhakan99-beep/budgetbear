@@ -1,0 +1,11 @@
+{
+  "name": "Kodin Talousstudio",
+  "short_name": "Talousstudio",
+  "description": "Paikallinen, offline-first taloussuunnitelma",
+  "lang": "fi",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f4f7fb",
+  "theme_color": "#111a2d",
+  "icons": []
+}
